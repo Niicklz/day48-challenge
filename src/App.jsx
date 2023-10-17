@@ -17,9 +17,9 @@ export const App = () => {
     }
     localStorage.setItem(
       "TASKS",
-      JSON.stringify([...todos, { text: newTask, completed: false }])
+      JSON.stringify([{ text: newTask, completed: false }, ...todos ])
     );
-    setTodos((todos) => [...todos, { text: newTask, completed: false }]);
+    setTodos((todos) => [{ text: newTask, completed: false }, ...todos ]);
 
     setNewTask("");
    
