@@ -7,8 +7,8 @@ export const App = () => {
 
 
   const aggreeTask = () => {
-    const taskToAgree = newTask.trim()
-    const values = todos.map((tasks) => tasks.text);
+    const taskToAgree = newTask.trim().toLowerCase()
+    const values = todos.map((tasks) => tasks.text.toLowerCase());
     if(taskToAgree.trim() === "") return
     if (values.includes(taskToAgree)) {
       setNewTask("");
