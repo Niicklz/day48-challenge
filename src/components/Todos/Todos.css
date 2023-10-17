@@ -15,7 +15,7 @@
 }
 .todo:hover {
     background-color: greenyellow;
-    color: #fff;
+    
 }
 .todo p {
     user-select: none;
